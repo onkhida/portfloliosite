@@ -1,0 +1,247 @@
+/*CSS Reset*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+header nav {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    align-items: center;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header nav .logo img {
+    height: 25px;
+}
+
+
+header nav .toggle-btn img {
+    height: 15px;
+}
+
+header nav .search img {
+    height: 23px;
+}
+
+
+header nav div {
+    cursor: pointer;
+}
+
+div {
+    /* border: 3px solid red; */
+    height: fit-content;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.5s;
+    font-family: 'Arima Madurai', sans-serif;
+}
+
+
+.overlay .nav-links {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #000000;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #0186c4;
+
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+
+    .container {
+        margin: 30px 0 30px 0;
+    }
+
+    .top img {
+        height: 50vh;
+        width: 90vw;
+    }
+  }
+
+  @media screen and (max-height: 600px) {
+    .bottom .form input[type='text'] {
+        width: 80vw !important;
+    }
+
+    .top img {
+        height: 50vh;
+        width: 90vw;
+    }
+
+  }
+
+@media screen and (max-height: 800px) {
+    .container .top .text {
+        /* border: 3px solid orange; */
+        width: 85% !important;
+    }
+
+    .container .bottom .box {
+        margin: 10px;
+    }
+
+    .top img {
+        width: 70% !important;
+    }
+
+}
+
+.tag-btn {
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    padding: 7px 40px 7px 40px !important;
+    /* padding-right: 5px; */
+    /* background: #6FD2FF; */
+    border-radius: 7px;
+    color: #002C40;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 7px 0 7px;
+}
+
+/* Main Here */
+.first {
+    width: 100vw;
+    margin-top: 30px;
+    min-height: 50vh;
+    /* border: 3px solid aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.first .title-text {
+    /* border: 1px solid #00B0FF; */
+    width: 100%;
+    margin: 10px 0 10px 0;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.first .title-text h1 {
+    font-family: 'Arima Madurai', sans-serif;
+    font-size: 20px;
+    padding: 20px 0 0.5px 0;
+    border-bottom: 3px solid #00B0FF;
+    width: fit-content;
+    margin-bottom: 30px;
+}
+
+.card {
+    width: 60%;
+    /* border: 3px solid blue; */
+    height: fit-content !important;
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin-bottom: 30px;
+    font-family: 'Arima Madurai', sans-serif;
+    /* flex-wrap: wrap; */
+    cursor: pointer;
+}
+
+.card:hover h1 {
+    text-decoration: underline;
+    transition: 1s ease;
+}
+
+
+.card img {
+    /* height: 100%; */
+    width: 40%;
+}
+
+.card .text {
+    /* height: 222px; */
+    /* border: 3px solid red; */
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.card .text h1 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.card .text small {
+    color: gray;
+    font-size: 11px;
+    margin-top: 20px;
+}
+
+/* Footer styles here */
+
+footer {
+    background-color: black;
+    height: 100px;
+    text-align: center;
+    color: white;
+    font-family: 'Arima Madurai', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .social-wrapper img {
+    height: 30px;
+    padding: 5px;
+    cursor: pointer;
+}

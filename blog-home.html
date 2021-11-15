@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/5.png">
+    <title>Daniel Eta</title>
+
+    <!--Arima Madurai and Poppins for font faces-->
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;700&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Jacques+Francois&display=swap" rel="stylesheet">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/blog-home-styles..css">
+
+    <!--Font Awesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <!--Navigation Bar goes here!-->
+    <header>
+        <nav>
+            
+            <div id="myNav" class="overlay">
+
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <div class="nav-links">
+                    <ul class='nav-link-list'>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <div onclick="openNav()" class="toggle-btn">
+                <img src="img/hamburger.png" alt="toggle links">
+            </div>
+
+            <div class="logo">
+                <img src="img/logo.png" alt="Daniel Eta">
+                <!-- <a href="/" class='logo-link'>δαη</a> -->
+            </div>
+
+            <div class="search">
+                <img src="img/search-icon.png" alt="search">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="first">
+            <div class="col-1">
+                <div class="featured-post">
+                    <div class="upper">
+                        <img src="img/pen-paper.png" alt="Pen and Paper">
+                    </div>
+
+                    <div class="lower">
+                        <small>Featured</small>
+                        <h1>Pen and Paper</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla semper, dui non commodo ultrices, enim dolor laoreet nunc, sit amet sagittis lectus purus id arcu. Curabitur et sagittis lorem. Nunc elementum diam orci, non molestie quam ultricies a. Curabitur vestibulum, nisl non ultricies venenatis.[...]</p>
+                        <!-- 45 words limit -->
+                        <div class="wrapper">
+                            <a href="#" class="light-btn">READ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="popular">
+                    <h1>Popular</h1>
+                    <div class="posts">
+                        <div class="box">
+                            <div class="wrapper">
+                                <h2>Why workspaces matter</h2>
+                                <p>Have you ever wondered how important your workspace is? Is there really a certain[...]</p>
+                            </div>
+                        </div>
+    
+                        <div class="box">
+                            <div class="wrapper">
+                                <h2>Good ‘ol HTML & CSS</h2>
+                                <p>Looking back at the first websites, We indeed have come a long way from static, raditional HTML powered pages to complex [...]</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="wrapper">
+                                <h2>Should I learn JavaScript?</h2>
+                                <p>Over the past few years the buzz around JavaScript has only gotten louder - and rightfully so. According [...]</p>
+                            </div>
+                        </div>      
+                    </div>
+                </div>
+
+                <div class="tags">
+                    <h1>Tags</h1>
+                        <div class="tag-container">
+                            <a href="#" style='background: rgba(2, 206, 83, 0.51);' class="tag-btn">Poetry</a>
+                            <a href="#" style='background: rgba(251, 44, 168, 0.51);' class="tag-btn">Writing</a>
+                            <a href="#" style='background:rgba(2, 108, 206, 0.51);' class="tag-btn">Art</a>
+                            <a href="#" style='background: rgba(153, 2, 206, 0.51);' class="tag-btn">Math</a>
+                            <a href="#" style='background: rgba(255, 0, 61, 0.51);' class="tag-btn">Opinion</a>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="second">
+
+            <div class="title-text">
+                <h1>ARTICLES</h1>
+            </div>
+
+            <div class="card">
+                <img src="img/worship.png">
+                <div class="text">
+                    <h1><b>The Book of Ecclesiastis</b></h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla semper, dui non commodo ultrices, enim dolor laoreet nunc, sit amet sagittis lectus s purus id arcu. Curabitur et sagittis lorem[...]</p>
+                    <small>October 1, 2020</small>
+                </div>
+            </div> 
+            
+            <div class="card">
+                <img src="img/worship.png">
+                <div class="text">
+                    <h1><b>The Book of Ecclesiastis</b></h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla semper, dui non commodo ultrices, enim dolor laoreet nunc, sit amet sagittis lectus s purus id arcu. Curabitur et sagittis lorem[...]</p>
+                    <small>October 1, 2020</small>
+                </div>
+            </div> 
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Copyright Daniel Eta</p>
+        <div class="social-wrapper">
+            <img src="img/github.png" alt="Github">
+            <img src="img/insta.png" alt="Instagram">
+            <img src="img/linkedin.png" alt="LinkedIn">
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

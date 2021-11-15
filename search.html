@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/5.png">
+    <title>Daniel Eta</title>
+
+    <!--Arima Madurai and Poppins for font faces-->
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;700&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Jacques+Francois&display=swap" rel="stylesheet">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/search-styles.css">
+
+    <!--Font Awesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <!--Navigation Bar goes here!-->
+    <header>
+        <nav>
+            
+            <div id="myNav" class="overlay">
+
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <div class="nav-links">
+                    <ul class='nav-link-list'>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <div onclick="openNav()" class="toggle-btn">
+                <img src="img/hamburger.png" alt="toggle links">
+            </div>
+
+            <div class="logo">
+                <img src="img/logo.png" alt="Daniel Eta">
+                <!-- <a href="/" class='logo-link'>δαη</a> -->
+            </div>
+
+            <div class="search">
+                <img src="img/search-icon.png" alt="search">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="top">
+                <img src="img/explore-pic.png" alt="Explore">
+            </div>
+
+            <div class="bottom">
+
+                    <div class="form">
+                        <form action="." method="POST">
+                            <input type="text" name="text" placeholder="search..." id="textbox">
+                            <input type="submit" class="submit-btn" value="SUBMIT">
+                        </form>
+                    </div>
+
+                    <div class="tags">
+                        <a href="#" style='background: rgba(2, 206, 83, 0.51);' class="tag-btn">Poetry</a>
+                        <a href="#" style='background: rgba(251, 44, 168, 0.51);' class="tag-btn">Writing</a>
+                        <a href="#" style='background:rgba(2, 108, 206, 0.51);' class="tag-btn">Art</a>
+                        <a href="#" style='background: rgba(153, 2, 206, 0.51);' class="tag-btn">Math</a>
+                        <a href="#" style='background: rgba(255, 0, 61, 0.51);' class="tag-btn">Opinion</a>
+                        <a href="#" style='background: rgba(222, 251, 44, 0.51);' class="tag-btn">Sports</a>
+                    </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright Daniel Eta</p>
+        <div class="social-wrapper">
+            <img src="img/github.png" alt="Github">
+            <img src="img/insta.png" alt="Instagram">
+            <img src="img/linkedin.png" alt="LinkedIn">
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

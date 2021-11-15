@@ -1,0 +1,273 @@
+/*CSS Reset*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+header nav {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    align-items: center;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header nav .logo img {
+    height: 25px;
+}
+
+
+header nav .toggle-btn img {
+    height: 15px;
+}
+
+header nav .search img {
+    height: 23px;
+}
+
+
+header nav div {
+    cursor: pointer;
+}
+
+div {
+    /* border: 3px solid red; */
+    height: fit-content;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.5s;
+    font-family: 'Arima Madurai', sans-serif;
+}
+
+
+.overlay .nav-links {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #000000;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #0186c4;
+
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+
+    .container {
+        margin: 30px 0 30px 0;
+    }
+
+    .top img {
+        height: 50vh;
+        width: 90vw;
+    }
+  }
+
+  @media screen and (max-height: 600px) {
+    .bottom .form input[type='text'] {
+        width: 80vw !important;
+    }
+
+    .top img {
+        height: 50vh;
+        width: 90vw;
+    }
+
+  }
+
+@media screen and (max-height: 800px) {
+    .container .top .text {
+        /* border: 3px solid orange; */
+        width: 85% !important;
+    }
+
+    .container .bottom .box {
+        margin: 10px;
+    }
+
+    .top img {
+        width: 70% !important;
+    }
+
+}
+
+.tag-btn {
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    padding: 7px 40px 7px 40px !important;
+    /* padding-right: 5px; */
+    /* background: #6FD2FF; */
+    border-radius: 7px;
+    color: #002C40;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 7px 0 7px;
+}
+
+.submit-btn {
+    font-family: Poppins, sans-serif;
+    font-size: 17px;
+    padding: 10px 27px 10px 27px !important;
+    /* padding-right: 5px; */
+    /* background: #6FD2FF; */
+    border-radius: 7px;
+    color: #002C40;
+    text-decoration: none;
+    border: 0;
+    background: #00B0FF;
+    color: #3F3D56;
+    margin: 20px 0 20px 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Main Styles here */
+
+.container {
+    min-height: 100vh;
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.top {
+    /* border: 3px solid blue; */
+    text-align: center;
+    width: 100vw;
+    height: fit-content;
+}
+
+.top img {
+    height: 50vh;
+    width: 50vw;
+}
+
+.bottom {
+    /* border: 3px solid red; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.bottom .form {
+    /* display: flex;     */
+    font-family: 'Arima Madurai', sans-serif;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    /* border: 2px solid gold; */
+    /* flex-direction: row-reverse !important; */
+}
+
+.bottom .form input[type='text'] {
+    background: #FAF7F7;
+    border-radius: 5px;
+    padding: 10px;
+    width: 60% !important;
+    border: 0;
+    font-family: 'Arima Madurai', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    height: 30px;
+}
+
+/* .bottom .form input[type='submit'] {
+    background: #00B0FF;
+    border-radius: 5px;
+    padding: 10px 30px 20px 30px !important;
+    font-family: 'Arima Madurai', sans-serif;
+    font-size: 15px;
+    border: 0;
+    font-weight: 700;
+    height: 30px !important;
+    color: #3F3D56;
+    cursor: pointer;
+} */
+
+.bottom .form input[type='text']:focus {
+    outline: none;
+}
+
+.bottom .tags {
+    display: flex;
+    width: 100%;
+    padding: 10px !important;
+    justify-content: center;
+    margin: 20px;
+    flex-wrap: wrap;
+
+}
+
+.bottom .tags a {
+    margin: 10px 10px 10px 10px;
+}
+
+/* Footer styles here */
+
+footer {
+    background-color: black;
+    height: 100px;
+    text-align: center;
+    color: white;
+    font-family: 'Arima Madurai', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .social-wrapper img {
+    height: 30px;
+    padding: 5px;
+    cursor: pointer;
+}

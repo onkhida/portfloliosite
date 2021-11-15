@@ -1,0 +1,66 @@
+/*CSS Reset*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.light-btn {
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    padding: 7px 40px 7px 40px !important;
+    /* padding-right: 5px; */
+    background: #6FD2FF;
+    border-radius: 7px;
+    color: #002C40;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 7px 0 7px;
+}
+
+.page {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page .text {
+    font-family: 'Arima Madurai', sans-serif;
+    width: 100%;
+    text-align: center;
+}
+
+.page .text h1 {
+    font-size: 1.5rem;
+}
+
+.page .text p {
+    font-size: 0.5rem;
+    padding-bottom: 10px;
+}
+
+.vector-drawing-1 {
+    position: absolute;
+    top: -20vh;
+    right: 0%;
+    z-index: -1;
+}
+
+.vector-drawing-2 {
+    position: absolute;
+    top: 50vh;
+    left: 0%;
+    z-index: -1;
+}
+
